@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+/* Certificate Properties */
+.image-property {
+    @apply h-auto w-auto rounded-3xl p-3 mx-auto md:object-contain;
+}
+.div-certificate-prop {
+    @apply bg-white border p-3 shadow-md;
+}
+.text-certificiate-component {
+    @apply text-justify sm:mx-auto p-3 text-sm font-poppins md:pt-3 pt-2 text-gray-400 max-w-prose tracking-wide;
+}
+.about-me-content {
+    @apply text-justify p-3 sm:mx-auto text-sm md:text-base font-poppins md:pt-8 text-gray-500 max-w-prose;
+}
+.about-me-photography {
+    @apply text-justify p-3 text-sm md:text-base font-poppins md:pt-8 text-gray-500 max-w-prose;
+}
+.highlightened-traits {
+    @apply font-poppins text-sm md:text-base text-gray-600 max-w-prose tracking-wide;
+}
+.category-titles {
+    @apply text-gray-800 font-poppins text-2xl md:text-3xl mx-auto tracking-wide p-1 border-b-2 border-gray-600 uppercase;
+}
+.title-project {
+    @apply mx-auto text-gray-700 font-poppins md:text-lg text-base;
+}
+.stacks-used {
+    @apply text-gray-400 font-roboto px-3 py-2 md:text-sm text-xs block;
+}
+.details-project {
+    @apply text-gray-700 font-poppins px-2 py-2 md:text-sm text-xs;
+}
+.footer-style {
+    @apply text-gray-500 font-poppins px-2 py-3 md:text-base text-sm;
+}
+.subcat-experience {
+    @apply text-gray-800 font-poppins text-2xl md:text-3xl px-4 mr-auto tracking-wide p-1 uppercase;
+}
+.project-icons {
+    @apply md:h-5 md:w-5 h-4 w-4;
+}
