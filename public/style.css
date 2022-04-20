@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-/*! tailwindcss v2.2.17 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -740,6 +740,7 @@ video {
 }
 
 .sticky{
+  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -32340,7 +32341,6 @@ html {
 }
 
 .about-me-photography {
-  max-width: 65ch;
   padding: 0.75rem;
   text-align: justify;
   font-family: Poppins;
@@ -32643,6 +32643,7 @@ html {
   }
 
   .sm\:sticky{
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -63878,6 +63879,7 @@ html {
   }
 
   .md\:sticky{
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -95113,6 +95115,7 @@ html {
   }
 
   .lg\:sticky{
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -126348,6 +126351,7 @@ html {
   }
 
   .xl\:sticky{
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -157583,6 +157587,7 @@ html {
   }
 
   .\32xl\:sticky{
+    position: -webkit-sticky;
     position: sticky;
   }
 
