@@ -7,6 +7,9 @@
 html {
     scroll-behavior: smooth;
 }
+.wrapped-body{
+    overflow-x: hidden;
+}
 /* Certificate Properties */
 .image-property {
     @apply h-auto w-auto rounded-3xl p-3 mx-auto md:object-contain;

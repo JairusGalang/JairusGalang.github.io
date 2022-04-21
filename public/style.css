@@ -32261,6 +32261,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.wrapped-body{
+  overflow-x: hidden;
+}
+
 /* Certificate Properties */
 
 .image-property {
