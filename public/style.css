@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 /*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
@@ -32261,7 +32261,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.wrapped-body{
+.wrapped-body {
   overflow-x: hidden;
 }
 
@@ -32293,14 +32293,12 @@ html {
 }
 
 .text-certificiate-component {
-  max-width: 65ch;
   padding: 0.75rem;
   padding-top: 0.5rem;
   text-align: justify;
   font-family: Poppins;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  letter-spacing: 0.025em;
   --tw-text-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-text-opacity));
 }
@@ -32319,7 +32317,6 @@ html {
 }
 
 .about-me-content {
-  max-width: 65ch;
   padding: 0.75rem;
   text-align: justify;
   font-family: Poppins;
