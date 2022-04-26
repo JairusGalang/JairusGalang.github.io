@@ -32360,11 +32360,9 @@ html {
 }
 
 .highlightened-traits {
-  max-width: 65ch;
   font-family: Poppins;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  letter-spacing: 0.025em;
   --tw-text-opacity: 1;
   color: rgba(75, 85, 99, var(--tw-text-opacity));
 }

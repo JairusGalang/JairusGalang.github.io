@@ -27,7 +27,7 @@ html {
   @apply text-justify p-3 text-sm md:text-base font-poppins md:pt-8 text-gray-500;
 }
 .highlightened-traits {
-  @apply font-poppins text-sm md:text-base text-gray-600 max-w-prose tracking-wide;
+  @apply font-poppins text-sm md:text-base text-gray-600;
 }
 .category-titles {
   @apply text-gray-800 font-poppins text-2xl md:text-3xl mx-auto tracking-wide p-1 border-b-2 border-gray-600 uppercase;
