@@ -35,6 +35,9 @@ html {
 .title-project {
   @apply mx-auto text-gray-700 font-poppins md:text-lg text-base;
 }
+.long-title-projects {
+  @apply text-gray-700 font-poppins lg:text-lg text-base mx-8 md:mx-6 lg:mx-4;
+}
 .stacks-used {
   @apply text-gray-400 font-roboto px-3 py-2 md:text-sm text-xs block;
 }

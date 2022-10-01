@@ -32414,6 +32414,32 @@ html {
   }
 }
 
+.long-title-projects {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: Poppins;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .long-title-projects{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .long-title-projects{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 .stacks-used {
   display: block;
   padding-left: 0.75rem;
