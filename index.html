@@ -11,11 +11,13 @@
     <link rel="icon" href="public/img/white-logo-name.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/3eac9cefe9.js" crossorigin="anonymous"></script>
 </head>
+<!-- begin: navBar-Items[Web&Mobile] -->
 <div class="flex flex-col justify-between">
     <!-- Nav -->
     <nav class="py-3 px-2 bg-gray-200 fixed top-0 inset-x-0">
         <!-- Wrapper for Nav -->
         <div class="max-w-7xl mx-auto">
+            <!-- begin: navBarWeb -->
             <div class="flex justify-between">
                 <!-- Logo Image -->
                 <div class="flex p-1">
@@ -26,21 +28,17 @@
                 </div>
                 <!-- Seconday Nav // Desktop Nav Items -->
                 <div class="hidden md:flex items-center space-x-2">
-                    <a href="#home"
-                        class="text-gray-800 font-poppins text-md tracking-wide py-2 px-2 transition duration-150 border-b-2 border-transparent hover:border-gray-600">Home
+                    <a href="#home" class="desktop-nav">Home
                     </a>
-                    <a href="#about"
-                        class="text-gray-800 font-poppins text-md tracking-wide py-2 px-2 duration-150 border-b-2 border-transparent hover:border-gray-800">About</a>
-                    <a href="#projects"
-                        class="text-gray-800 font-poppins text-md tracking-wide py-2 px-2 duration-150 border-b-2 border-transparent hover:border-gray-800">Projects
+                    <a href="#about" class="desktop-nav">About</a>
+                    <a href="#projects" class="desktop-nav">Projects
                     </a>
-                    <a href="#work-experience"
-                        class="text-gray-800 font-poppins text-md tracking-wide py-2 px-2 duration-150 border-b-2 border-transparent hover:border-gray-800">Work
+                    <a href="#work-experience" class="desktop-nav">Work
                         Experience</a>
-                    <a href="#certificates"
-                        class="text-gray-800 font-poppins text-md tracking-wide py-2 px-2 duration-150 border-b-2 border-transparent hover:border-gray-800">Certificates</a>
+                    <a href="#certificates" class="desktop-nav">Certificates</a>
+                    <a href="#contactPage" class="desktop-nav">Contact
+                        Me</a>
                 </div>
-
                 <!-- Mobile Nav Items -->
                 <div class="md:hidden flex items-center p-3">
                     <button class="toggleMenubtn">
@@ -51,34 +49,30 @@
                         </svg>
                     </button>
                 </div>
-
-
             </div>
-            <!-- NAV ITEMS SECTION -->
+            <!-- end: navBarWeb -->
+            <!-- begin: navBarMobile -->
             <div class="menuBar hidden py-2 px-3">
-                <a href="#home"
-                    class="text-gray-800 block font-poppins text-md tracking-wide py-2 px-2 duration-150 border-b-2 border-transparent hover:border-gray-800">Home</a>
-                <a href="#about"
-                    class="text-gray-800 block font-poppins text-md tracking-wide py-2 px-2 duration-150 border-b-2 border-transparent hover:border-gray-800">About</a>
-                <a href="#projects"
-                    class="text-gray-800 block font-poppins text-md tracking-wide py-2 px-2 duration-150 border-b-2 border-transparent hover:border-gray-800">Projects</a>
-                <a href="#work-experience"
-                    class="text-gray-800 block font-poppins text-md tracking-wide py-2 px-2 duration-150 border-b-2 border-transparent hover:border-gray-800">Work
+                <a href="#home" class="mobile-nav">Home</a>
+                <a href="#about" class="mobile-nav">About</a>
+                <a href="#projects" class="mobile-nav">Projects</a>
+                <a href="#work-experience" class="mobile-nav">Work
                     Experience</a>
-                <a href="#certificates"
-                    class="text-gray-800 block font-poppins text-md tracking-wide py-2 px-2 duration-150 border-b-2 border-transparent hover:border-gray-800">Certificates</a>
-
+                <a href="#certificates" class="mobile-nav">Certificates</a>
+                <a href="#contactPage" class="mobile-nav">Contact
+                    Me</a>
             </div>
-            <!-- / Mobile Nav Items  -->
+            <!-- end: navBarMobile  -->
         </div>
         <!-- Wrapper for Nav -->
     </nav>
     <!-- Nav -->
 </div>
+<!-- end: navBar-Items[Web&Mobile] -->
 <div class="wrapped-body">
 
     <body>
-        <!-- Landing Page -->
+        <!-- begin: langingPage -->
         <div class="lg:h-screen h-auto md:py-48 py-36 bg-gray-100 text-center" id="home">
             <div class="max-w-7xl p-2 md:justify-between mx-auto items-center grid md:grid-cols-2 gap-y-16 md:gap-20 ">
                 <div>
@@ -103,21 +97,16 @@
                                 Bachelor of Science in Information Technology
                             </p>
                             <p
-                                class="text-center block text-xs md:text-sm font-poppins text-gray-500 pb-1 tracking-wide ">
+                                class="text-center block text-xs md:text-sm font-poppins text-gray-500 tracking-wide pb-2">
                                 Major in Web Development
                             </p>
-
-                            <!-- <p class="text-left block text-md font-mono text-gray-600 px-2 p-1">Course: <span
-                                    class="text-left text-md font-mono text-gray-500">BS Information Technology</span>
-                            </p> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- end of Langding Page -->
-
-        <!-- aboutMe Content -->
+        <!-- end: landingPage -->
+        <!-- begin: startMeContent -->
         <div class="h-auto bg-gray-100 text-center" id="about">
             <div class="flex md:py-20 py-20">
                 <p class="category-titles" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine"
@@ -188,7 +177,8 @@
             <!-- end of second Content -->
             <!-- end of aboutMe Content -->
         </div>
-        <!-- PROJECT CONTENT HERE -->
+        <!-- end: startMeContent -->
+        <!-- begin: projectContent -->
         <div class="h-auto bg-gray-100 text-center" id="projects">
             <div class="flex md:py-20 py-20" data-aos="fade-zoom-in" data-aos-offset="200"
                 data-aos-easing="ease-in-sine" data-aos-duration="600">
@@ -270,10 +260,10 @@
                     <div class="pb-4">
                         <p class="title-project">NFT Museum: NFT Marketplace
                         </p>
-                        <p class="mx-auto text-gray-400 font-poppins text-sm p-3 pb-5">UI/UX Design Concept
+                        <p class="sbjct-desc-prop">UI/UX Design Concept
                         </p>
                         <a href="https://www.behance.net/gallery/133626807/NFT-Museum-NFT-Marketplace" target="_blank"
-                            class="bg-transparent text-spacing hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                            class="shrt-btn-property">
                             Behance
                         </a>
                     </div>
@@ -285,11 +275,10 @@
                     <div class="pb-4">
                         <p class="title-project">MenTalk - Mental Talk Support App
                         </p>
-                        <p class="mx-auto text-gray-400 font-poppins text-sm p-3 pb-5">UI/UX Design Concept
+                        <p class="sbjct-desc-prop">UI/UX Design Concept
                         </p>
                         <a href="https://www.behance.net/gallery/133792887/MenTalk-Mental-Health-Support-Mobile-App-Design"
-                            target="_blank"
-                            class="bg-transparent text-spacing hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                            target="_blank" class="shrt-btn-property">
                             Behance
                         </a>
                     </div>
@@ -301,10 +290,10 @@
                     <div class="pb-4">
                         <p class="title-project">MouleWallet: CryptoWallet
                         </p>
-                        <p class="mx-auto text-gray-400 font-poppins text-sm p-3 pb-5">UI/UX Design Concept
+                        <p class="sbjct-desc-prop">UI/UX Design Concept
                         </p>
                         <a href="https://www.behance.net/gallery/133681579/MouleWallet-CryptoWallet" target="_blank"
-                            class="bg-transparent text-spacing hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                            class="shrt-btn-property">
                             Behance
                         </a>
                     </div>
@@ -317,33 +306,34 @@
                     <div class="pb-4">
                         <p class="title-project">EncryptoMail | Landing Page
                         </p>
-                        <p class="mx-auto text-gray-400 font-poppins text-sm p-3 pb-5">UI/UX Design Concept
+                        <p class="sbjct-desc-prop">UI/UX Design Concept
                         </p>
                         <a href="https://www.behance.net/gallery/142348279/EncryptoMail-Landing-Page" target="_blank"
-                            class="bg-transparent text-spacing hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                            class="shrt-btn-property">
                             Behance
                         </a>
                     </div>
                 </div>
-                <div class="bg-white rounded shadow-md" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600">
+                <div class="bg-white rounded shadow-md" data-aos="fade-up" data-aos-offset="200"
+                    data-aos-easing="ease-in-sine" data-aos-duration="600">
                     <img src="public/img/RelayCloud_UIUX.png"
-                        class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit" alt="EncryptoMail-LandingPage">
+                        class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit"
+                        alt="EncryptoMail-LandingPage">
                     <div class="pb-4">
                         <p class="long-title-projects">Relay Cloud - a privacy focused Cloud Storage | Landing Page
                         </p>
-                        <p class="mx-auto text-gray-400 font-poppins text-sm p-3 pb-5">UI/UX Design Concept
+                        <p class="sbjct-desc-prop">UI/UX Design Concept
                         </p>
-                        <a href="https://www.behance.net/gallery/151447897/Relay-Cloud-a-privacy-Cloud-Storage" target="_blank"
-                            class="bg-transparent text-spacing hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        <a href="https://www.behance.net/gallery/151447897/Relay-Cloud-a-privacy-Cloud-Storage"
+                            target="_blank" class="shrt-btn-property">
                             Behance
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- end of Project Content -->
-        <!-- WORK EXPERIENCE HERE -->
+        <!-- end: projectContent -->
+        <!-- begin: workExperience -->
         <div class="h-auto bg-gray-100 text-center md:py-32 py-20" id="work-experience">
             <div class="flex" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine"
                 data-aos-duration="600">
@@ -354,78 +344,85 @@
             <div
                 class="max-w-screen-2xl mx-auto px-5 md:px-4 md:py-2 md:justify-between mt-32 grid xl:grid-cols-3 md:grid-cols-2 gap-y-16 md:gap-16">
                 <!-- first Item -->
-                <div class="bg-white shadow-md block p-6 rounded-2xl" data-aos="fade-up-right" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <p class="text-gray-800 font-poppins text-base md:text-xl font-bold uppercase rounded-3xl">
-                        SP Madrid and Associates Law Firm
-                    </p>
-                    <div class="flex items-left pt-3">
-                        <p class="text-gray-400 font-poppins text-xs md:text-sm p-2 pb-1 rounded-3xl block">
-                            <i class="px-2 fas fa-location-dot"></i>
-                            Location: San Carlos City, Pangasinan
+                <div class="bg-white shadow-md block p-2 lg:p-6 rounded-2xl" data-aos="fade-up-right"
+                    data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+                    <div class="pt-3 pb-3">
+                        <p class="text-gray-800 font-poppins text-md md:text-lg font-bold uppercase rounded-3xl">
+                            Google Developers Student Clubs
                         </p>
-                    </div>
-                    <div class="flex items-left">
-                        <p class="text-gray-400 font-poppins text-xs md:text-sm p-2 pb-1 rounded-3xl block">
-                            <i class="px-2 fa-solid fa-user"></i> Position: OJT as Data Engineer
-                        </p>
-                    </div>
-                    <div class="flex items-left">
-                        <p class="text-gray-400 font-poppins text-xs md:text-sm p-2 pb-1 rounded-3xl block">
-                            <i class="px-2 fa-solid fa-user-clock"></i>Rendered Hours: 500 Hours
-                        </p>
+                        <div class="flex items-left pt-3">
+                            <p class="workexp-txt-details">
+                                <i class="px-2 fas fa-location-dot"></i>
+                                Location: University of Pangasinan
+                            </p>
+                        </div>
+                        <div class="flex items-left">
+                            <p class="workexp-txt-details">
+                                <i class="px-2 fa-solid fa-user"></i> Position: Public Information Officer
+                            </p>
+                        </div>
+                        <div class="flex items-left">
+                            <p class="workexp-txt-details">
+                                <i class="px-2 fa-solid fa-user-clock"></i>Timeline: July 2020 - July 2021
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <!-- second Item -->
-                <div class="bg-white shadow-md block p-6 rounded-2xl" data-aos="fade-up" data-aos-offset="200"
+                <div class="bg-white shadow-md block p-2 lg:p-6 rounded-2xl" data-aos="fade-up" data-aos-offset="200"
                     data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <p class="text-gray-800 font-poppins text-md md:text-lg font-bold uppercase rounded-3xl">
-                        Google Developers Student Clubs
-                    </p>
-                    <div class="flex items-left pt-3">
-                        <p class="text-gray-400 font-poppins text-xs md:text-sm p-2 pb-1 rounded-3xl block">
-                            <i class="px-2 fas fa-location-dot"></i>
-                            Location: University of Pangasinan
+                    <div class="pt-3 pb-3">
+                        <p class="text-gray-800 font-poppins text-base md:text-xl font-bold uppercase rounded-3xl">
+                            SP Madrid and Associates Law Firm
                         </p>
-                    </div>
-                    <div class="flex items-left">
-                        <p class="text-gray-400 font-poppins text-xs md:text-sm p-2 pb-1 rounded-3xl block">
-                            <i class="px-2 fa-solid fa-user"></i> Position: Public Information Officer
-                        </p>
-                    </div>
-                    <div class="flex items-left">
-                        <p class="text-gray-400 font-poppins text-xs md:text-sm p-2 pb-1 rounded-3xl block">
-                            <i class="px-2 fa-solid fa-user-clock"></i>Timeline: July 2020 - July 2021
-                        </p>
+                        <div class="flex items-left pt-3">
+                            <p class="workexp-txt-details">
+                                <i class="px-2 fas fa-location-dot"></i>
+                                Location: San Carlos City, Pangasinan
+                            </p>
+                        </div>
+                        <div class="flex items-left">
+                            <p class="workexp-txt-details">
+                                <i class="px-2 fa-solid fa-user"></i> Position: OJT as Data Engineer
+                            </p>
+                        </div>
+                        <div class="flex items-left">
+                            <p class="workexp-txt-details">
+                                <i class="px-2 fa-solid fa-user-clock"></i>Rendered Hours: 500 Hours
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <!-- third Item -->
-                <div class="bg-white shadow-md block p-6 rounded-2xl" data-aos="fade-up-left" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <p class="text-gray-800 font-poppins text-md md:text-lg font-bold uppercase rounded-3xl">
-                        Intellizens
-                    </p>
-                    <div class="flex items-left pt-3">
-                        <p class="text-gray-400 font-poppins text-xs md:text-sm p-2 pb-1 rounded-3xl block">
-                            <i class="px-2 fas fa-location-dot"></i>
-                            Location: Toronto, Ontario Canada
+                <div class="bg-white shadow-md block p-2 lg:p-6 rounded-2xl" data-aos="fade-up-left"
+                    data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+                    <div class="pt-3 pb-3">
+                        <p class="text-gray-800 font-poppins text-md md:text-lg font-bold uppercase rounded-3xl">
+                            Intellizens
                         </p>
+                        <div class="flex items-left pt-3">
+                            <p class="workexp-txt-details">
+                                <i class="px-2 fas fa-location-dot"></i>
+                                Location: Toronto, Ontario Canada
+                            </p>
+                        </div>
+                        <div class="flex items-left">
+                            <p class="workexp-txt-details">
+                                <i class="px-2 fa-solid fa-user"></i> Position: Freelance as UI/UX Designer
+                            </p>
+                        </div>
+                        <div class="flex items-left">
+                            <p class="workexp-txt-details">
+                                <i class="px-2 fa-solid fa-user-clock"></i>Timeline: December 2021 - Present
+                            </p>
+                        </div>
                     </div>
-                    <div class="flex items-left">
-                        <p class="text-gray-400 font-poppins text-xs md:text-sm p-2 pb-1 rounded-3xl block">
-                            <i class="px-2 fa-solid fa-user"></i> Position: Freelance as UI/UX Designer
-                        </p>
-                    </div>
-                    <div class="flex items-left">
-                        <p class="text-gray-400 font-poppins text-xs md:text-sm p-2 pb-1 rounded-3xl block">
-                            <i class="px-2 fa-solid fa-user-clock"></i>Timeline: December 2021 - Present
-                        </p>
-                    </div>
+
                 </div>
             </div>
         </div>
-        <!-- END OF WORK EXPERIENCE HERE -->
-        <!-- Certficiate Content -->
+        <!-- end: workExperience -->
+        <!-- begin: certificateArea -->
         <div class="h-auto bg-gray-100 text-center pb-32" id="certificates">
             <div class="flex md:py-20 py-20" data-aos="fade-zoom-in" data-aos-offset="200"
                 data-aos-easing="ease-in-sine" data-aos-duration="600">
@@ -434,24 +431,30 @@
                 </p>
             </div>
             <div
-                class="max-w-full mx-auto md:px-8 md:py-2 p-3 md:justify-between grid xl:grid-cols-3 md:grid-cols-2 gap-y-16 md:gap-16">
-                <div class="div-certificate-prop" data-aos="fade-up-right" data-aos-offset="200"
+                class="max-w-full mx-auto md:px-8 md:py-2 p-3 md:justify-between grid xl:grid-cols-4 md:grid-cols-2 gap-y-16 md:gap-16">
+                <div class="div-layout-property" data-aos="fade-up-right" data-aos-offset="200"
                     data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <img src="public/Certificates/BagoSphere_Galang.png" class="image-property" alt="BagoSphere_Galang">
+                    <a href="https://jairusgalang.github.io/public/Certificates/BagoSphere_Galang.png" target="_blank">
+                        <img src="public/Certificates/BagoSphere_Galang.png" class="image-property"
+                            alt="BagoSphere_Galang">
+                    </a>
                     <p class="text-certificiate-component">
                         Attended at BagoSphere's Webinar and tackled about building our self-confidence when
                         adventuring to the real-word challenges.</p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <img src="public/Certificates/Internship-GalangJairus.png" class="image-property"
-                        alt="Internship-GalangJairus">
+                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                    data-aos-duration="600">
+                    <a href="https://jairusgalang.github.io/public/Certificates/Internship-GalangJairus.png"
+                        target="_blank">
+                        <img src="public/Certificates/Internship-GalangJairus.png" class="image-property"
+                            alt="Internship-GalangJairus">
+                    </a>
                     <p class="text-certificiate-component">
                         Certificated awarded after successfully completing the Internship in the assigned
                         company.
                     </p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up-left" data-aos-offset="200"
+                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200"
                     data-aos-easing="ease-in-sine" data-aos-duration="600">
                     <img src="public/Certificates/CODING.jpg" class="image-property" alt="CODING">
                     <p class="text-certificiate-component">
@@ -460,7 +463,7 @@
                         our
                         Department and the competition held on Discord. </p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up-right" data-aos-offset="200"
+                <div class="div-layout-property" data-aos="fade-up-left" data-aos-offset="200"
                     data-aos-easing="ease-in-sine" data-aos-duration="600">
                     <img src="public/Certificates/DSC-FIREBASE-IN-ACTION.jpg" class="image-property"
                         alt="Firebase-Webinar">
@@ -468,8 +471,8 @@
                         A certificate was given by the CITE Department after participating the webinar about
                         Firebase.</p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <div class="div-layout-property" data-aos="fade-up-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                    data-aos-duration="600">
                     <img src="public/Certificates/DSCUPang.png" class="image-property" alt="DSCUpang-Badges">
                     <p class="text-certificiate-component">
                         The Badges that I earned after attending webinars from other DSC Chapters and after
@@ -477,14 +480,14 @@
                         completing
                         their required tasks.</p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up-left" data-aos-offset="200"
+                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200"
                     data-aos-easing="ease-in-sine" data-aos-duration="600">
                     <img src="public/Certificates/GDGPH2020Certificate-1.png" class="image-property"
                         alt="GDGPH-Webinar">
                     <p class="text-certificiate-component">
                         Awarded by attending GDG Philippines Devfest and by participating in their webinars.</p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up-right" data-aos-offset="200"
+                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200"
                     data-aos-easing="ease-in-sine" data-aos-duration="600">
                     <img src="public/Certificates/GDSC-CORE-TEAM-MEMBER.png" class="image-property"
                         alt="GDSC-CoreMember-Cert">
@@ -497,8 +500,8 @@
                         Club.
                     </p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <div class="div-layout-property" data-aos="fade-up-left" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                    data-aos-duration="600">
                     <img src="public/Certificates/Intro-to-Dsc_Galang.png" class="image-property"
                         alt="Intro-to-Dsc-Webinar">
                     <p class="text-certificiate-component">
@@ -506,7 +509,7 @@
                         introduced what is
                         GDSC and how does DSC Upang would operate.</p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up-left" data-aos-offset="200"
+                <div class="div-layout-property" data-aos="fade-up-right" data-aos-offset="200"
                     data-aos-easing="ease-in-sine" data-aos-duration="600">
                     <img src="public/Certificates/Intro-to-Fetch-Galang.jpg" class="image-property"
                         alt="Fetch-Api-Webianr">
@@ -516,7 +519,7 @@
                         api used and interact to both developers and
                         users.</p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up-right" data-aos-offset="200"
+                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200"
                     data-aos-easing="ease-in-sine" data-aos-duration="600">
                     <img src="public/Certificates/Intro-to-Photography.jpg" class="image-property"
                         alt="Photo-Video-Webinar">
@@ -525,8 +528,8 @@
                         and
                         Videography of one of our Alumni in our Department.</p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                    data-aos-duration="600">
                     <img src="public/Certificates/MS-Project_Galang.jpg" class="image-property"
                         alt="MS-Project-Webinar">
                     <p class="text-certificiate-component">
@@ -536,14 +539,14 @@
                         Project.
                     </p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up-left" data-aos-offset="200"
+                <div class="div-layout-property" data-aos="fade-up-left" data-aos-offset="200"
                     data-aos-easing="ease-in-sine" data-aos-duration="600">
                     <img src="public/Certificates/PAW2020_Galang.png" class="image-property" alt="PAW-Webinar">
                     <p class="text-certificiate-component">
                         The certificate was awarded after participating in the Philippine Android Week for three
                         consecutive days and finishing the required codelabs.</p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up-right" data-aos-offset="200"
+                <div class="div-layout-property" data-aos="fade-up-right" data-aos-offset="200"
                     data-aos-easing="ease-in-sine" data-aos-duration="600">
                     <img src="public/Certificates/SEMINAR.jpg" class="image-property" alt="Developing-Kotlin-Webinar">
                     <p class="text-certificiate-component">
@@ -553,14 +556,14 @@
                         us
                         after trying out on how to code in Kotlin.</p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                    data-aos-duration="600">
                     <img src="public/Certificates/SUCCESS-LADDER-2021.jpg" class="image-property"
                         alt="Master-In-Web-Dynamics">
                     <p class="text-certificiate-component">
                         A certificate awarded during our Student Success Ladder and held on May 2021</p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up-left" data-aos-offset="200"
+                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200"
                     data-aos-easing="ease-in-sine" data-aos-duration="600">
                     <img src="public/Certificates/Useful-tools_Galang.jpg" class="image-property"
                         alt="Useful-Tools-Webinar">
@@ -570,7 +573,7 @@
                         that
                         we want to try or to learn and the certificate was given after the event</p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up-right" data-aos-offset="200"
+                <div class="div-layout-property" data-aos="fade-up-left" data-aos-offset="200"
                     data-aos-easing="ease-in-sine" data-aos-duration="600">
                     <img src="public/img/KinobiCertGalang.jpg" class="image-property" alt="Kinobi-Certificate">
                     <p class="text-certificiate-component">
@@ -578,8 +581,8 @@
                         certificate
                         was given to us after participating the event. </p>
                 </div>
-                <div class="div-certificate-prop" data-aos="fade-up" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <div class="div-layout-property" data-aos="fade-up-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                    data-aos-duration="600">
                     <img src="public/Certificates/DeansLister-FirstYear.jpg" class="image-property"
                         alt="DeansLister-FirstYear">
                     <p class="text-certificiate-component">
@@ -591,7 +594,72 @@
             </div>
             <!-- end of certificate Content -->
         </div>
-        <!-- Footer Area -->
+        <!-- end: cerficateArea -->
+        <!-- begin: contactPage -->
+        <div class="h-auto bg-gray-100 pb-32" id="contactPage">
+            <div class="flex col md:py-20 py-20" data-aos="fade-zoom-in" data-aos-offset="200"
+                data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <p class="category-titles">
+                    Contact Page
+                </p>
+            </div>
+            <div class="max-w-4xl mx-auto md:px-8 md:py-2 p-3 md:justify-between">
+                <div class="bg-white border p-6 shadow-md">
+                    <!-- fullName and User's Email -->
+                    <form action="https://formsubmit.co/6ce8cc1e5078eae3dfea6eb70a3bba9e" method="POST">
+                    <div class="gap-4 gap-y-3 md:gap-6 md:gap-y-5 md:grid md:grid-cols-2">
+                        <div class="mb-6">
+                            <label class="block">
+                                <span class="txt-box-property" require>
+                                    Your Name
+                                </span>
+                                <input type="text" name="fullName" class="input-property"
+                                    placeholder="Hello, What's your name?" />
+                            </label>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block">
+                                <span class="txt-box-property">
+                                    Your Email
+                                </span>
+                                <input type="email" name="email" class="input-property"
+                                    placeholder="you@yourdomain.com" />
+                            </label>
+                        </div>
+                    </div>
+                    <!-- subjectArea -->
+                    <div>
+                        <div class="mb-6">
+                            <label class="block">
+                                <span class="txt-box-property">
+                                    Subject
+                                </span>
+                                <input type="text" name="subject" class="input-property"
+                                    placeholder="Subject of your message." />
+                            </label>
+                        </div>
+                    </div>
+                    <!-- messageArea -->
+                    <div>
+                        <label for="message"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
+                            message</label>
+                        <textarea name="message" id="message" rows="4" class="block p-2.5 w-full text-sm bg-white border shadow border-slate-300 placeholder-slate-400 
+                                                  focus:outline-none focus:border-gray-300 
+                                                focus:ring-gray-300 rounded-md sm:text-sm focus:ring-1"
+                            placeholder="Hey, you can type your message here! :)"></textarea>
+                    </div>
+                    <div class="flex justify-center items-center pt-8">
+                        <button type="submit" class="lng-btn-property">
+                            Submit
+                        </button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end: contanctPage -->
+        <!-- begin: footerArea -->
         <footer class="bg-gray-100">
             <div class="max-w-7xl mx-auto">
                 <div class="md:flex md:justify-between mx-auto grid grid-cols-1 items-center">
@@ -626,7 +694,7 @@
                 </div>
             </div>
         </footer>
-        <!-- end of Footer Area -->
+        <!-- end: footerArea -->
     </body>
 </div>
 <script src="/js/style.js"></script>

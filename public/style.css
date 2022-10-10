@@ -740,7 +740,6 @@ video {
 }
 
 .sticky{
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -6844,13 +6843,11 @@ video {
 }
 
 .w-min{
-  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
 }
 
 .w-max{
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -6864,13 +6861,11 @@ video {
 }
 
 .min-w-min{
-  min-width: -webkit-min-content;
   min-width: -moz-min-content;
   min-width: min-content;
 }
 
 .min-w-max{
-  min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
 }
@@ -6932,13 +6927,11 @@ video {
 }
 
 .max-w-min{
-  max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
 }
 
 .max-w-max{
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
 }
@@ -9951,22 +9944,9 @@ video {
   --tw-scale-y: 1.5;
 }
 
-@-webkit-keyframes spin{
-  to{
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes spin{
   to{
     transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes ping{
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
   }
 }
 
@@ -9977,69 +9957,42 @@ video {
   }
 }
 
-@-webkit-keyframes pulse{
-  50%{
-    opacity: .5;
-  }
-}
-
 @keyframes pulse{
   50%{
     opacity: .5;
   }
 }
 
-@-webkit-keyframes bounce{
-  0%, 100%{
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
 @keyframes bounce{
   0%, 100%{
     transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
   50%{
     transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
 
 .animate-none{
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 
 .animate-spin{
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 .animate-ping{
-  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .animate-pulse{
-  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .animate-bounce{
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
 }
 
 .cursor-auto{
@@ -10148,12 +10101,10 @@ video {
 }
 
 .auto-cols-min{
-  grid-auto-columns: -webkit-min-content;
   grid-auto-columns: min-content;
 }
 
 .auto-cols-max{
-  grid-auto-columns: -webkit-max-content;
   grid-auto-columns: max-content;
 }
 
@@ -10182,12 +10133,10 @@ video {
 }
 
 .auto-rows-min{
-  grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
 }
 
 .auto-rows-max{
-  grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
 }
 
@@ -32283,7 +32232,7 @@ html {
   }
 }
 
-.div-certificate-prop {
+.div-layout-property {
   border-width: 1px;
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -32297,8 +32246,8 @@ html {
   padding-top: 0.5rem;
   text-align: justify;
   font-family: Poppins;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-text-opacity));
 }
@@ -32313,6 +32262,13 @@ html {
 @media (min-width: 768px){
   .text-certificiate-component{
     padding-top: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .text-certificiate-component{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -32531,6 +32487,224 @@ html {
   }
 }
 
+.shrt-btn-property {
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+}
+
+.shrt-btn-property:hover{
+  border-color: transparent;
+}
+
+.shrt-btn-property{
+  background-color: transparent;
+}
+
+.shrt-btn-property:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+
+.shrt-btn-property{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.shrt-btn-property:hover{
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.lng-btn-property {
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+}
+
+.lng-btn-property:hover{
+  border-color: transparent;
+}
+
+.lng-btn-property{
+  background-color: transparent;
+}
+
+.lng-btn-property:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+
+.lng-btn-property{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.lng-btn-property:hover{
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.sbjct-desc-prop {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.75rem;
+  padding-bottom: 1.25rem;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.desktop-nav > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.desktop-nav{
+  border-bottom-width: 2px;
+  border-color: transparent;
+}
+
+.desktop-nav:hover{
+  --tw-border-opacity: 1;
+  border-color: rgba(31, 41, 55, var(--tw-border-opacity));
+}
+
+.desktop-nav{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgba(31, 41, 55, var(--tw-text-opacity));
+  transition-duration: 150ms;
+}
+
+.mobile-nav {
+  display: block;
+  border-bottom-width: 2px;
+  border-color: transparent;
+}
+
+.mobile-nav:hover{
+  --tw-border-opacity: 1;
+  border-color: rgba(31, 41, 55, var(--tw-border-opacity));
+}
+
+.mobile-nav{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgba(31, 41, 55, var(--tw-text-opacity));
+  transition-duration: 150ms;
+}
+
+.txt-box-property {
+  display: block;
+  padding-left: 0.125rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px){
+  .txt-box-property{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.input-property {
+  margin-top: 0.375rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.375rem;
+  border-width: 1px;
+}
+
+.input-property:focus{
+  --tw-border-opacity: 1;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+}
+
+.input-property{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.input-property:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(209, 213, 219, var(--tw-ring-opacity));
+}
+
+@media (min-width: 768px){
+  .input-property{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.workexp-txt-details {
+  display: block;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  padding-bottom: 0.25rem;
+  font-family: Poppins;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .workexp-txt-details{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -32668,7 +32842,6 @@ html {
   }
 
   .sm\:sticky{
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -38772,13 +38945,11 @@ html {
   }
 
   .sm\:w-min{
-    width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
   }
 
   .sm\:w-max{
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
   }
@@ -38792,13 +38963,11 @@ html {
   }
 
   .sm\:min-w-min{
-    min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content;
   }
 
   .sm\:min-w-max{
-    min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
   }
@@ -38860,13 +39029,11 @@ html {
   }
 
   .sm\:max-w-min{
-    max-width: -webkit-min-content;
     max-width: -moz-min-content;
     max-width: min-content;
   }
 
   .sm\:max-w-max{
-    max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
   }
@@ -41880,28 +42047,23 @@ html {
   }
 
   .sm\:animate-none{
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 
   .sm\:animate-spin{
-    -webkit-animation: spin 1s linear infinite;
-            animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
   }
 
   .sm\:animate-ping{
-    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
   }
 
   .sm\:animate-pulse{
-    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 
   .sm\:animate-bounce{
-    -webkit-animation: bounce 1s infinite;
-            animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
   }
 
   .sm\:cursor-auto{
@@ -42010,12 +42172,10 @@ html {
   }
 
   .sm\:auto-cols-min{
-    grid-auto-columns: -webkit-min-content;
     grid-auto-columns: min-content;
   }
 
   .sm\:auto-cols-max{
-    grid-auto-columns: -webkit-max-content;
     grid-auto-columns: max-content;
   }
 
@@ -42044,12 +42204,10 @@ html {
   }
 
   .sm\:auto-rows-min{
-    grid-auto-rows: -webkit-min-content;
     grid-auto-rows: min-content;
   }
 
   .sm\:auto-rows-max{
-    grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
   }
 
@@ -63904,7 +64062,6 @@ html {
   }
 
   .md\:sticky{
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -70008,13 +70165,11 @@ html {
   }
 
   .md\:w-min{
-    width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
   }
 
   .md\:w-max{
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
   }
@@ -70028,13 +70183,11 @@ html {
   }
 
   .md\:min-w-min{
-    min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content;
   }
 
   .md\:min-w-max{
-    min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
   }
@@ -70096,13 +70249,11 @@ html {
   }
 
   .md\:max-w-min{
-    max-width: -webkit-min-content;
     max-width: -moz-min-content;
     max-width: min-content;
   }
 
   .md\:max-w-max{
-    max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
   }
@@ -73116,28 +73267,23 @@ html {
   }
 
   .md\:animate-none{
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 
   .md\:animate-spin{
-    -webkit-animation: spin 1s linear infinite;
-            animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
   }
 
   .md\:animate-ping{
-    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
   }
 
   .md\:animate-pulse{
-    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 
   .md\:animate-bounce{
-    -webkit-animation: bounce 1s infinite;
-            animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
   }
 
   .md\:cursor-auto{
@@ -73246,12 +73392,10 @@ html {
   }
 
   .md\:auto-cols-min{
-    grid-auto-columns: -webkit-min-content;
     grid-auto-columns: min-content;
   }
 
   .md\:auto-cols-max{
-    grid-auto-columns: -webkit-max-content;
     grid-auto-columns: max-content;
   }
 
@@ -73280,12 +73424,10 @@ html {
   }
 
   .md\:auto-rows-min{
-    grid-auto-rows: -webkit-min-content;
     grid-auto-rows: min-content;
   }
 
   .md\:auto-rows-max{
-    grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
   }
 
@@ -95140,7 +95282,6 @@ html {
   }
 
   .lg\:sticky{
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -101244,13 +101385,11 @@ html {
   }
 
   .lg\:w-min{
-    width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
   }
 
   .lg\:w-max{
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
   }
@@ -101264,13 +101403,11 @@ html {
   }
 
   .lg\:min-w-min{
-    min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content;
   }
 
   .lg\:min-w-max{
-    min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
   }
@@ -101332,13 +101469,11 @@ html {
   }
 
   .lg\:max-w-min{
-    max-width: -webkit-min-content;
     max-width: -moz-min-content;
     max-width: min-content;
   }
 
   .lg\:max-w-max{
-    max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
   }
@@ -104352,28 +104487,23 @@ html {
   }
 
   .lg\:animate-none{
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 
   .lg\:animate-spin{
-    -webkit-animation: spin 1s linear infinite;
-            animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
   }
 
   .lg\:animate-ping{
-    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
   }
 
   .lg\:animate-pulse{
-    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 
   .lg\:animate-bounce{
-    -webkit-animation: bounce 1s infinite;
-            animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
   }
 
   .lg\:cursor-auto{
@@ -104482,12 +104612,10 @@ html {
   }
 
   .lg\:auto-cols-min{
-    grid-auto-columns: -webkit-min-content;
     grid-auto-columns: min-content;
   }
 
   .lg\:auto-cols-max{
-    grid-auto-columns: -webkit-max-content;
     grid-auto-columns: max-content;
   }
 
@@ -104516,12 +104644,10 @@ html {
   }
 
   .lg\:auto-rows-min{
-    grid-auto-rows: -webkit-min-content;
     grid-auto-rows: min-content;
   }
 
   .lg\:auto-rows-max{
-    grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
   }
 
@@ -126376,7 +126502,6 @@ html {
   }
 
   .xl\:sticky{
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -132480,13 +132605,11 @@ html {
   }
 
   .xl\:w-min{
-    width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
   }
 
   .xl\:w-max{
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
   }
@@ -132500,13 +132623,11 @@ html {
   }
 
   .xl\:min-w-min{
-    min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content;
   }
 
   .xl\:min-w-max{
-    min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
   }
@@ -132568,13 +132689,11 @@ html {
   }
 
   .xl\:max-w-min{
-    max-width: -webkit-min-content;
     max-width: -moz-min-content;
     max-width: min-content;
   }
 
   .xl\:max-w-max{
-    max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
   }
@@ -135588,28 +135707,23 @@ html {
   }
 
   .xl\:animate-none{
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 
   .xl\:animate-spin{
-    -webkit-animation: spin 1s linear infinite;
-            animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
   }
 
   .xl\:animate-ping{
-    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
   }
 
   .xl\:animate-pulse{
-    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 
   .xl\:animate-bounce{
-    -webkit-animation: bounce 1s infinite;
-            animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
   }
 
   .xl\:cursor-auto{
@@ -135718,12 +135832,10 @@ html {
   }
 
   .xl\:auto-cols-min{
-    grid-auto-columns: -webkit-min-content;
     grid-auto-columns: min-content;
   }
 
   .xl\:auto-cols-max{
-    grid-auto-columns: -webkit-max-content;
     grid-auto-columns: max-content;
   }
 
@@ -135752,12 +135864,10 @@ html {
   }
 
   .xl\:auto-rows-min{
-    grid-auto-rows: -webkit-min-content;
     grid-auto-rows: min-content;
   }
 
   .xl\:auto-rows-max{
-    grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
   }
 
@@ -157612,7 +157722,6 @@ html {
   }
 
   .\32xl\:sticky{
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -163716,13 +163825,11 @@ html {
   }
 
   .\32xl\:w-min{
-    width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
   }
 
   .\32xl\:w-max{
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
   }
@@ -163736,13 +163843,11 @@ html {
   }
 
   .\32xl\:min-w-min{
-    min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content;
   }
 
   .\32xl\:min-w-max{
-    min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
   }
@@ -163804,13 +163909,11 @@ html {
   }
 
   .\32xl\:max-w-min{
-    max-width: -webkit-min-content;
     max-width: -moz-min-content;
     max-width: min-content;
   }
 
   .\32xl\:max-w-max{
-    max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
   }
@@ -166824,28 +166927,23 @@ html {
   }
 
   .\32xl\:animate-none{
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 
   .\32xl\:animate-spin{
-    -webkit-animation: spin 1s linear infinite;
-            animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
   }
 
   .\32xl\:animate-ping{
-    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
   }
 
   .\32xl\:animate-pulse{
-    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 
   .\32xl\:animate-bounce{
-    -webkit-animation: bounce 1s infinite;
-            animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
   }
 
   .\32xl\:cursor-auto{
@@ -166954,12 +167052,10 @@ html {
   }
 
   .\32xl\:auto-cols-min{
-    grid-auto-columns: -webkit-min-content;
     grid-auto-columns: min-content;
   }
 
   .\32xl\:auto-cols-max{
-    grid-auto-columns: -webkit-max-content;
     grid-auto-columns: max-content;
   }
 
@@ -166988,12 +167084,10 @@ html {
   }
 
   .\32xl\:auto-rows-min{
-    grid-auto-rows: -webkit-min-content;
     grid-auto-rows: min-content;
   }
 
   .\32xl\:auto-rows-max{
-    grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
   }
 
