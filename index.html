@@ -1,802 +1,1339 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="public/style.css">
-    <title>Jairus Galang | Portfolio </title>
-    <link rel="icon" href="public/img/white-logo-name.jpg" loading="lazy" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/3eac9cefe9.js" crossorigin="anonymous"></script>
-</head>
-<!-- begin: navBar-Items[Web&Mobile] -->
-<div class="flex flex-col justify-between">
+    <link rel="stylesheet" href="public/style.css" />
+    <title>Jairus Galang | Portfolio</title>
+    <link
+      rel="icon"
+      href="public/img/white-logo-name.jpg"
+      loading="lazy"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/3eac9cefe9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- begin: navBar-Items[Web&Mobile] -->
+  <div class="flex flex-col justify-between">
     <!-- Nav -->
     <nav class="py-3 px-2 bg-gray-200 fixed top-0 inset-x-0">
-        <!-- Wrapper for Nav -->
-        <div class="max-w-7xl mx-auto">
-            <!-- begin: navBarWeb -->
-            <div class="flex justify-between">
-                <!-- Logo Image -->
-                <div class="flex p-1">
-                    <div class="flex items-center space-x-8">
-                        <a href="https://jairusgalang.github.io/" target="_blank">
-                            <img src="public/img/logo-name.jpg" loading="lazy" class="h-10 w-10" alt="logo-portfolio">
-                        </a>
-                    </div>
-                    <!-- <span class="text-gray-600 font-mono text-2xl tracking-wider uppercase" id="#firstDiv">JG</span> -->
-                </div>
-                <!-- Seconday Nav // Desktop Nav Items -->
-                <div class="hidden md:flex items-center space-x-2">
-                    <a href="#home" class="desktop-nav">Home
-                    </a>
-                    <a href="#about" class="desktop-nav">About</a>
-                    <a href="#projects" class="desktop-nav">Projects
-                    </a>
-                    <a href="#work-experience" class="desktop-nav">Work
-                        Experience</a>
-                    <a href="#certificates" class="desktop-nav">Certificates</a>
-                    <a href="#contactPage" class="desktop-nav">Contact
-                        Me</a>
-                </div>
-                <!-- Mobile Nav Items -->
-                <div class="md:hidden flex items-center p-3">
-                    <button class="toggleMenubtn">
-                        <svg class="w-6 h-6 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
+      <!-- Wrapper for Nav -->
+      <div class="max-w-7xl mx-auto">
+        <!-- begin: navBarWeb -->
+        <div class="flex justify-between">
+          <!-- Logo Image -->
+          <div class="flex p-1">
+            <div class="flex items-center space-x-8">
+              <a href="https://jairusgalang.github.io/" target="_blank">
+                <img
+                  src="public/img/logo-name.jpg"
+                  loading="lazy"
+                  class="h-10 w-10"
+                  alt="logo-portfolio"
+                />
+              </a>
             </div>
-            <!-- end: navBarWeb -->
-            <!-- begin: navBarMobile -->
-            <div class="menuBar hidden py-2 px-3">
-                <a href="#home" class="mobile-nav">Home</a>
-                <a href="#about" class="mobile-nav">About</a>
-                <a href="#projects" class="mobile-nav">Projects</a>
-                <a href="#work-experience" class="mobile-nav">Work
-                    Experience</a>
-                <a href="#certificates" class="mobile-nav">Certificates</a>
-                <a href="#contactPage" class="mobile-nav">Contact
-                    Me</a>
-            </div>
-            <!-- end: navBarMobile  -->
+            <!-- <span class="text-gray-600 font-mono text-2xl tracking-wider uppercase" id="#firstDiv">JG</span> -->
+          </div>
+          <!-- Seconday Nav // Desktop Nav Items -->
+          <div class="hidden md:flex items-center space-x-2">
+            <a href="#home" class="desktop-nav">Home </a>
+            <a href="#about" class="desktop-nav">About</a>
+            <a href="#projects" class="desktop-nav">Projects </a>
+            <a href="#work-experience" class="desktop-nav">Work Experience</a>
+            <a href="#certificates" class="desktop-nav">Certificates</a>
+            <a href="#contactPage" class="desktop-nav">Contact Me</a>
+          </div>
+          <!-- Mobile Nav Items -->
+          <div class="md:hidden flex items-center p-3">
+            <button class="toggleMenubtn">
+              <svg
+                class="w-6 h-6 cursor-pointer"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
-        <!-- Wrapper for Nav -->
+        <!-- end: navBarWeb -->
+        <!-- begin: navBarMobile -->
+        <div class="menuBar hidden py-2 px-3">
+          <a href="#home" class="mobile-nav">Home</a>
+          <a href="#about" class="mobile-nav">About</a>
+          <a href="#projects" class="mobile-nav">Projects</a>
+          <a href="#work-experience" class="mobile-nav">Work Experience</a>
+          <a href="#certificates" class="mobile-nav">Certificates</a>
+          <a href="#contactPage" class="mobile-nav">Contact Me</a>
+        </div>
+        <!-- end: navBarMobile  -->
+      </div>
+      <!-- Wrapper for Nav -->
     </nav>
     <!-- Nav -->
-</div>
-<!-- end: navBar-Items[Web&Mobile] -->
-<div class="wrapped-body">
-
+  </div>
+  <!-- end: navBar-Items[Web&Mobile] -->
+  <div class="wrapped-body">
     <body>
-        <!-- begin: langingPage -->
-        <div class="lg:h-screen h-auto md:py-48 py-36 bg-gray-100 text-center" id="home">
-            <div class="max-w-7xl p-2 md:justify-between mx-auto items-center grid md:grid-cols-2 gap-y-16 md:gap-20 ">
-                <div>
-                    <h2 class="font-poppins text-4xl mx-auto text-gray-600 md:text-6xl max-w-prose">
-                        Web Developer
-                    </h2>
-                    <p class="font-poppins text-xs text-gray-500 mx-auto md:text-sm mt-2 max-w-prose">
-                        Aspiring to be full-stack Web Developer
-                    </p>
-                </div>
-                <div class="px-5">
-                    <div class="bg-white rounded border shadow-xl px-5">
-                        <a href="https://jairusgalang.github.io/public/img/picture_uniform.png" target="_blank">
-                            <img src="public/img/picture_uniform.png" loading="lazy"
-                                class="h-64 w-auto rounded-full mx-auto object-covershadow-xl" alt="myPicture">
-                        </a>
+      <!-- begin: langingPage -->
+      <div
+        class="lg:h-screen h-auto md:py-48 py-36 bg-gray-100 text-center"
+        id="home"
+      >
+        <div
+          class="max-w-7xl p-2 md:justify-between mx-auto items-center grid md:grid-cols-2 gap-y-16 md:gap-20"
+        >
+          <div>
+            <h2
+              class="font-poppins text-4xl mx-auto text-gray-600 md:text-6xl max-w-prose"
+            >
+              Web Developer
+            </h2>
+            <p
+              class="font-poppins text-xs text-gray-500 mx-auto md:text-sm mt-2 max-w-prose"
+            >
+              Aspiring to be full-stack Web Developer
+            </p>
+          </div>
+          <div class="px-5">
+            <div class="bg-white rounded border shadow-xl px-5">
+              <a
+                href="https://jairusgalang.github.io/public/img/picture_uniform.png"
+                target="_blank"
+              >
+                <img
+                  src="public/img/picture_uniform.png"
+                  loading="lazy"
+                  class="h-64 w-auto rounded-full mx-auto object-covershadow-xl"
+                  alt="myPicture"
+                />
+              </a>
 
-                        <div>
-                            <p
-                                class="text-center block text-lg font-medium md:text-2xl font-poppins text-gray-500 px-3 tracking-wide md:tracking-wider uppercase">
-                                Jairus P. Galang
-                            </p>
-                            <p class="text-center block text-xs md:text-sm font-poppins text-gray-500 tracking-wide">
-
-                                Bachelor of Science in Information Technology
-                            </p>
-                            <p
-                                class="text-center block text-xs md:text-sm font-poppins text-gray-500 tracking-wide pb-2">
-                                Major in Web Development
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end: landingPage -->
-        <!-- begin: startMeContent -->
-        <div class="h-auto bg-gray-100 text-center" id="about">
-            <div class="flex md:py-20 py-20">
-                <p class="category-titles" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600">
-                    About me</p>
-            </div>
-            <!-- first Content -->
-            <div class="max-w-7xl p-2 md:justify-between mx-auto grid md:grid-cols-2 gap-y-16 md:gap-32">
-                <div data-aos="fade-up-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600">
-                    <p class="about-me-content">
-                        Hello, I am <b class="highlightened-traits">Jairus
-                            Galang</b> and I am
-                        from the Philippines.
-                        I graduated at PHINMA University of Pangasinan with a Bachelor's Degree in Information
-                        Technology and Major in Web
-                        Development. I do love exploring technologies that has something to with Web Development.
-                    </p>
-                    <p class="about-me-content pt-5">
-                        I am also a former member of
-                        <b class="highlightened-traits">Google Developer
-                            Student Clubs</b>
-                        and I was assigned as <b class="highlightened-traits">Public
-                            Information
-                            Officer</b> our club. Even though it was only a short amount of time, I
-                        enjoyed being
-                        a member of DSC UPang and that made me explore more about the technologies around me
-                        and that also made me want to become a full-stack <b class="highlightened-traits">Web
-                            Developer</b>.
-                    </p>
-                </div>
-                <div class="px-3" data-aos="fade-up-left" data-aos-offset="200" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600">
-                    <div class="bg-white border p-3 shadow-md">
-                        <a href="https://jairusgalang.github.io/public/img/08.jpg" target="_blank">
-                            <img src="public/img/08.jpg" class="h-42 w-auto rounded-full mx-auto object-covershadow-xl"
-                                loading="lazy" alt="DSC-GALANG-PIC">
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-            <!-- end of first Content -->
-
-            
-            <!-- end of aboutMe Content -->
-        </div>
-        <!-- end: startMeContent -->
-        <!-- begin: projectContent -->
-        <div class="h-auto bg-gray-100 text-center" id="projects">
-            <div class="flex md:py-20 py-20" data-aos="fade-zoom-in" data-aos-offset="200"
-                data-aos-easing="ease-in-sine" data-aos-duration="600">
-                <p class="category-titles">
-                    Projects</p>
-            </div>
-            <div
-                class="max-w-8xl px-8 p-3 md:justify-between mx-auto grid md:grid-cols-2 xl:grid-cols-3 gap-y-16 md:gap-16">
-                <div class="bg-white rounded shadow-md" data-aos="fade-up-right" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/img/CRRWeb-MockUp.jpg" target="_blank">
-                        <img src="public/img/CRRWeb-MockUp.jpg"
-                            class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit" loading="lazy"
-                            alt="CRR-Web"></a>
-                    <div>
-                        <p class="title-project">CITE Research Repository -
-                            Web
-                        </p>
-                        <div class="flex px-3 items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="project-icons" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                            <p class="details-project">Role: Project Manager and
-                                Developer
-                            </p>
-                        </div>
-                        <div class="flex px-3 items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="project-icons" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                            <p class="details-project">Date: September 2020 -
-                                May 2021
-                            </p>
-                        </div>
-                        <p class="stacks-used">
-                            PHP | MySQL | jQuery | JavaScript | SweetAlert | Git |
-                            HTML | Bootstrap | Visual Studio Code </p>
-                    </div>
-                </div>
-                <div class="bg-white rounded shadow-md" data-aos="fade-up" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/img/CRRMobile.jpg" target="_blank">
-                        <img src="public/img/CRRMobile.jpg"
-                            class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit" loading="lazy"
-                            alt="CRR-Mobile">
-                    </a>
-                    <div>
-                        <p class="title-project">CITE Research Repository -
-                            Mobile
-                        </p>
-                        <div class="flex px-3 items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="project-icons" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                            <p class="details-project">Role: Project Manager and
-                                Developer
-                            </p>
-                        </div>
-                        <div class="flex px-3 items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="project-icons" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                            <p class="details-project">Date: September 2020 -
-                                January 2021
-                            </p>
-                        </div>
-                        <p class="stacks-used">JAVA | Android | Android Studio |
-                            Firebase Realtime
-                            Database | Visual Studio Code | Git</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded shadow-md" data-aos="fade-up-left" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/img/NFT-Museum-Mockup.jpg" target="_blank">
-                        <img src="public/img/NFT-Museum-Mockup.jpg"
-                            class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit" loading="lazy"
-                            alt="NFT-Museum-Mockup">
-                    </a>
-                    <div class="pb-4">
-                        <p class="title-project">NFT Museum: NFT Marketplace
-                        </p>
-                        <p class="sbjct-desc-prop">UI/UX Design Concept
-                        </p>
-                        <a href="https://www.behance.net/gallery/133626807/NFT-Museum-NFT-Marketplace" target="_blank"
-                            class="shrt-btn-property">
-                            Behance
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-white rounded shadow-md" data-aos="fade-up-right" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/img/MenTalk - Mockup.jpg" target="_blank">
-                        <img src="public/img/MenTalk - Mockup.jpg" loading="lazy"
-                            class="h-auto p-3 w-full rounded-3xl mx-auto " alt="MenTalkDesign">
-                    </a>
-                    <div class="pb-4">
-                        <p class="title-project">MenTalk - Mental Talk Support App
-                        </p>
-                        <p class="sbjct-desc-prop">UI/UX Design Concept
-                        </p>
-                        <a href="https://www.behance.net/gallery/133792887/MenTalk-Mental-Health-Support-Mobile-App-Design"
-                            target="_blank" class="shrt-btn-property">
-                            Behance
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-white rounded shadow-md" data-aos="fade-up" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/img/MouleWalletCryptoWallet.jpg" target="_blank">
-                        <img src="public/img/MouleWalletCryptoWallet.jpg" loading="lazy"
-                            class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit"
-                            alt="MouleWallet-Mockup">
-                    </a>
-                    <div class="pb-4">
-                        <p class="title-project">MouleWallet: CryptoWallet
-                        </p>
-                        <p class="sbjct-desc-prop">UI/UX Design Concept
-                        </p>
-                        <a href="https://www.behance.net/gallery/133681579/MouleWallet-CryptoWallet" target="_blank"
-                            class="shrt-btn-property">
-                            Behance
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-white rounded shadow-md" data-aos="fade-up" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/img/EncryptoMail-Landing-page.jpg" target="_blank">
-                        <img src="public/img/EncryptoMail-Landing-page.jpg" loading="lazy"
-                            class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit"
-                            alt="EncryptoMail-LandingPage">
-                    </a>
-                    <div class="pb-4">
-                        <p class="title-project">EncryptoMail | Landing Page
-                        </p>
-                        <p class="sbjct-desc-prop">UI/UX Design Concept
-                        </p>
-                        <a href="https://www.behance.net/gallery/142348279/EncryptoMail-Landing-Page" target="_blank"
-                            class="shrt-btn-property">
-                            Behance
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-white rounded shadow-md" data-aos="fade-up" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/img/RelayCloud_UIUX.jpg" target="_blank">
-                        <img src="public/img/RelayCloud_UIUX.jpg" loading="lazy"
-                            class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit"
-                            alt="EncryptoMail-LandingPage">
-                    </a>
-                    <div class="pb-4">
-                        <p class="long-title-projects">Relay Cloud - a privacy focused Cloud Storage | Landing Page
-                        </p>
-                        <p class="sbjct-desc-prop">UI/UX Design Concept
-                        </p>
-                        <a href="https://www.behance.net/gallery/151447897/Relay-Cloud-a-privacy-Cloud-Storage"
-                            target="_blank" class="shrt-btn-property">
-                            Behance
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end: projectContent -->
-        <!-- begin: workExperience -->
-        <div class="h-auto bg-gray-100 text-center" id="work-experience">
-            <div class="flex md:pt-20 pt-20" data-aos="fade-zoom-in" data-aos-offset="200"
-                data-aos-easing="ease-in-sine" data-aos-duration="600">
-                <p class="category-titles ">
-                    Experience</p>
-            </div>
-            <p class="text-gray-400 font-poppins italic md:text-sm pb-8 mt-8">You can have a <a
-                    href="https://drive.google.com/file/d/128BkLpy8c_9JKGe_luXh_YsaVCvMUuW0/view?usp=sharing"
-                    target="_blank" class="font-semibold text-blue-400">preview</a> of my resume via Google Drive.
-                You may contact me if you think I am fit in your team/company.</p>
-            <div
-                class="max-w-screen-2xl mx-auto px-5 md:px-4 md:py-2 md:justify-between grid xl:grid-cols-3 md:grid-cols-2 gap-y-16 md:gap-16">
-                <!-- first Item -->
-                <div class="bg-white shadow-md block p-2 lg:p-6 rounded-2xl" data-aos="fade-up-rsomeight"
-                    data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <div class="pt-3 pb-3">
-                        <p class="text-gray-800 font-poppins text-md md:text-lg font-bold uppercase rounded-3xl">
-                            Google Developers Student Clubs
-                        </p>
-                        <div class="flex items-left pt-3">
-                            <p class="workexp-txt-details">
-                                <i class="px-2 fas fa-location-dot"></i>
-                                Location: University of Pangasinan
-                            </p>
-                        </div>
-                        <div class="flex items-left">
-                            <p class="workexp-txt-details">
-                                <i class="px-2 fa-solid fa-user"></i> Position: Public Information Officer
-                            </p>
-                        </div>
-                        <div class="flex items-left">
-                            <p class="workexp-txt-details">
-                                <i class="px-2 fa-solid fa-user-clock"></i>Timeline: July 2020 - July 2021
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center p-2 lg:p-6">
-                        <a href="https://www.facebook.com/gdsc.phinmaupang" target="_blank"> <i
-                                class="workexp-txt-details fa-brands fa-facebook-square fa-lg"></i>
-                        </a>
-                        <a href="https://www.facebook.com/gdsc.phinmaupang" target="_blank"> <i
-                                class="workexp-txt-details fab fa-linkedin fa-lg"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- second Item -->
-                <div class="bg-white shadow-md block p-2 lg:p-6 rounded-2xl" data-aos="fade-up" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <div class="pt-3 pb-3">
-                        <p class="text-gray-800 font-poppins text-base md:text-xl font-bold uppercase rounded-3xl">
-                            SP Madrid and Associates Law Firm
-                        </p>
-                        <div class="flex items-left pt-3">
-                            <p class="workexp-txt-details">
-                                <i class="px-2 fas fa-location-dot"></i>
-                                Location: San Carlos City, Pangasinan
-                            </p>
-                        </div>
-                        <div class="flex items-left">
-                            <p class="workexp-txt-details">
-                                <i class="px-2 fa-solid fa-user"></i> Position: Data Engineer Intern
-                            </p>
-                        </div>
-                        <div class="flex items-left">
-                            <p class="workexp-txt-details">
-                                <i class="px-2 fa-solid fa-user-clock"></i>Rendered Hours: 500 Hours
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="flex items-center justify-center p-2 lg:p-6">
-                        <a href="https://www.facebook.com/officialspmadrid" target="_blank"> <i
-                                class="workexp-txt-details fa-brands fa-facebook-square fa-lg"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/spmadridlawfirm" target="_blank"> <i
-                                class="workexp-txt-details fab fa-linkedin fa-lg"></i>
-                        </a>
-                        <a href="https://www.spmadridlaw.com/" target="_blank"> <i
-                                class="workexp-txt-details fa fa-link fa-lg"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- third Item -->
-                <div class="bg-white shadow-md block p-2 lg:p-6 rounded-2xl" data-aos="fade-up-left"
-                    data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <div class="pt-3 pb-3">
-                        <p class="text-gray-800 font-poppins text-md md:text-lg font-bold uppercase rounded-3xl">
-                            Intellizens
-                        </p>
-                        <div class="flex items-left pt-3">
-                            <p class="workexp-txt-details">
-                                <i class="px-2 fas fa-location-dot"></i>
-                                Location: Toronto, Ontario Canada
-                            </p>
-                        </div>
-                        <div class="flex items-left">
-                            <p class="workexp-txt-details">
-                                <i class="px-2 fa-solid fa-user"></i> Position: Project Based Freelance as UI/UX
-                                Designer
-                            </p>
-                        </div>
-                        <div class="flex items-left">
-                            <p class="workexp-txt-details">
-                                <i class="px-2 fa-solid fa-user-clock"></i>Timeline: December 2021 - December 2022
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md block p-2 lg:p-6 rounded-2xl" data-aos="fade-up-left"
-                    data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <div class="pt-3 pb-3">
-                        <p class="text-gray-800 font-poppins text-md md:text-lg font-bold uppercase rounded-3xl">
-                            Innovative Media Philippines
-                        </p>
-                        <div class="flex items-left pt-3">
-                            <p class="workexp-txt-details">
-                                <i class="px-2 fas fa-location-dot"></i>
-                                Location: Baguio City, Benguet, Philippines.
-                            </p>
-                        </div>
-                        <div class="flex items-left">
-                            <p class="workexp-txt-details">
-                                <i class="px-2 fa-solid fa-user"></i> Position: Software Developer
-                            </p>
-                        </div>
-                        <div class="flex items-left">
-                            <p class="workexp-txt-details">
-                                <i class="px-2 fa-solid fa-user-clock"></i>Timeline: November 2022 - April 2023
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center p-2 lg:p-6">
-                        <a href="https://impwebdevelopment.com/" target="_blank"> <i
-                                class="workexp-txt-details fa fa-link fa-lg"></i>
-                        </a>
-                        <a href="mailto:innovativemediaphilippines@gmail.com" target="_blank"> <i
-                                class="workexp-txt-details fa fa-envelope fa-lg"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end: workExperience -->
-        <!-- begin: certificateArea -->
-        <div class="h-auto bg-gray-100 text-center" id="certificates">
-            <div class="flex md:py-20 py-20" data-aos="fade-zoom-in" data-aos-offset="200"
-                data-aos-easing="ease-in-sine" data-aos-duration="600">
-                <p class="category-titles">
-                    Certificates
+              <div>
+                <p
+                  class="text-center block text-lg font-medium md:text-2xl font-poppins text-gray-500 px-3 tracking-wide md:tracking-wider uppercase"
+                >
+                  Jairus P. Galang
                 </p>
+                <p
+                  class="text-center block text-xs md:text-sm font-poppins text-gray-500 tracking-wide"
+                >
+                  Bachelor of Science in Information Technology
+                </p>
+                <p
+                  class="text-center block text-xs md:text-sm font-poppins text-gray-500 tracking-wide pb-2"
+                >
+                  Major in Web Development
+                </p>
+              </div>
             </div>
-            <div
-                class="max-w-full mx-auto md:px-8 md:py-2 p-3 md:justify-between grid xl:grid-cols-4 md:grid-cols-2 gap-y-16 md:gap-16">
-                <div class="div-layout-property" data-aos="fade-up-right" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/BagoSphere_Galang.jpg" target="_blank">
-                        <img src="public/Certificates/BagoSphere_Galang.jpg" class="image-property" loading="lazy"
-                            alt="BagoSphere_Galang">
-                    </a>
-                    <p class="text-certificiate-component">
-                        Attended at BagoSphere's Webinar and tackled about building our self-confidence when
-                        adventuring to the real-word challenges.</p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/Internship-GalangJairus.jpg"
-                        target="_blank">
-                        <img src="public/Certificates/Internship-GalangJairus.jpg" class="image-property" loading="lazy"
-                            alt="Internship-GalangJairus">
-                    </a>
-                    <p class="text-certificiate-component">
-                        Certificated awarded after successfully completing the Internship in the assigned
-                        company.
-                    </p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/CODING.jpg" target="_blank">
-                        <img src="public/Certificates/CODING.jpg" class="image-property" loading="lazy" alt="CODING">
-                    </a>
-                    <p class="text-certificiate-component">
-                        DSC UPang and CITESC partnered together and hosted Coding Competition for the lower year
-                        of
-                        our
-                        Department and the competition held on Discord. </p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up-left" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <!-- Edit here -->
-                    <a href="https://jairusgalang.github.io/public/Certificates/DSC-FIREBASE-IN-ACTION.jpg"
-                        target="_blank">
-                        <img src="public/Certificates/DSC-FIREBASE-IN-ACTION.jpg" class="image-property" loading="lazy"
-                            alt="Firebase-Webinar">
-                    </a>
-                    <p class="text-certificiate-component">
-                        A certificate was given by the CITE Department after participating the webinar about
-                        Firebase.</p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up-right" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/DSCUPang.jpg" target="_blank">
-                        <img src="public/Certificates/DSCUPang.jpg" class="image-property" loading="lazy"
-                            alt="DSCUpang-Badges">
-                    </a>
-                    <p class="text-certificiate-component">
-                        The Badges that I earned after attending webinars from other DSC Chapters and after
-                        successfully
-                        completing
-                        their required tasks.</p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/GDGPH2020Certificate-1.jpg"
-                        target="_blank">
-                        <img src="public/Certificates/GDGPH2020Certificate-1.jpg" loading="lazy" class="image-property"
-                            alt="GDGPH-Webinar">
-                    </a>
-                    <p class="text-certificiate-component">
-                        Awarded by attending GDG Philippines Devfest and by participating in their webinars.</p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/GDSC-CORE-TEAM-MEMBER.jpg"
-                        target="_blank">
-                        <img src="public/Certificates/GDSC-CORE-TEAM-MEMBER.jpg" loading="lazy" class="image-property"
-                            alt="GDSC-CoreMember-Cert">
-                    </a>
-                    <p class="text-certificiate-component">
-                        The certificate was awarded to us as a recognition of being a member of the Core Team in
-                        DSC UPang Chapter, the certificate also serves as
-                        <a href="https://www.omniquotient.com/certificate/EC332FF8BBC8"
-                            class="text-gray-800 font-poppins font-semibold text-md tracking-wide duration-150 border-b-2 border-transparent hover:border-gray-800">authenticity</a>
-                        of our membership of our
-                        Club.
-                    </p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up-left" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/Intro-to-Dsc_Galang.jpg"
-                        target="_blank">
-                        <img src="public/Certificates/Intro-to-Dsc_Galang.jpg" class="image-property" loading="lazy"
-                            alt="Intro-to-Dsc-Webinar">
-                    </a>
-                    <p class="text-certificiate-component">
-                        The certificate was awarded after attending the webinar, together with our DSC Lead who
-                        introduced what is
-                        GDSC and how does DSC Upang would operate.</p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up-right" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/Intro-to-Fetch-Galang.jpg"
-                        target="_blank">
-                        <img src="public/Certificates/Intro-to-Fetch-Galang.jpg" class="image-property" loading="lazy"
-                            alt="Fetch-Api-Webianr">
-                    </a>
-                    <p class="text-certificiate-component">
-                        The certificate was awarded after the event, and the webinar gave us an idea on how does
-                        fetch
-                        api used and interact to both developers and
-                        users.</p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/Intro-to-Photography.jpg"
-                        target="_blank">
-                        <img src="public/Certificates/Intro-to-Photography.jpg" class="image-property" loading="lazy"
-                            alt="Photo-Video-Webinar">
-                    </a>
-                    <p class="text-certificiate-component">
-                        Awarded after attending and participating the webinar for Introduction to coding
-                        and
-                        Videography of one of our Alumni in our Department.</p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/MS-Project_Galang.jpg" target="_blank">
-                        <img src="public/Certificates/MS-Project_Galang.jpg" class="image-property" loading="lazy"
-                            alt="MS-Project-Webinar">
-                    </a>
-                    <p class="text-certificiate-component">
-                        The award was given to us after the webinar and the speaker of our webinar was our
-                        instructor
-                        and we tackled about on how do we utilize Software Development Management with MS
-                        Project.
-                    </p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up-left" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/PAW2020_Galang.jpg" target="_blank">
-                        <img src="public/Certificates/PAW2020_Galang.jpg" class="image-property" loading="lazy"
-                            alt="PAW-Webinar">
-                    </a>
-                    <p class="text-certificiate-component">
-                        The certificate was awarded after participating in the Philippine Android Week for three
-                        consecutive days and finishing the required codelabs.</p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up-right" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/SEMINAR.jpg" target="_blank">
-                        <img src="public/Certificates/SEMINAR.jpg" class="image-property" loading="lazy"
-                            alt="Developing-Kotlin-Webinar">
-                    </a>
-                    <p class="text-certificiate-component">
-                        Awarded after participating in Developing Android with Kotlin and the certificate was
-                        given to us after trying out on how to code in Kotlin.</p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/SUCCESS-LADDER-2021.jpg"
-                        target="_blank">
-                        <img src="public/Certificates/SUCCESS-LADDER-2021.jpg" class="image-property" loading="lazy"
-                            alt="Master-In-Web-Dynamics">
-                    </a>
-                    <p class="text-certificiate-component">
-                        A certificate awarded during our Student Success Ladder and held on May 2021</p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/Useful-tools_Galang.jpg"
-                        target="_blank">
-                        <img src="public/Certificates/Useful-tools_Galang.jpg" class="image-property" loading="lazy"
-                            alt="Useful-Tools-Webinar">
-                    </a>
-                    <p class="text-certificiate-component">
-                        The webinar gave us a lot of useful tips on how to utilize the tools in every
-                        technologies
-                        that
-                        we want to try or to learn and the certificate was given after the event</p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up-left" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/KinobiCertGalang.jpg" target="_blank">
-                        <img src="public/img/KinobiCertGalang.jpg" class="image-property" loading="lazy"
-                            alt="Kinobi-Certificate">
-                    </a>
-                    <p class="text-certificiate-component">
-                        Building or creating an effective resume was our subject during the webinar and the
-                        certificate
-                        was given to us after participating the event. </p>
-                </div>
-                <div class="div-layout-property" data-aos="fade-up-right" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <a href="https://jairusgalang.github.io/public/Certificates/DeansLister-FirstYear.jpg"
-                        target="_blank">
-                        <img src="public/Certificates/DeansLister-FirstYear.jpg" class="image-property" loading="lazy"
-                            alt="DeansLister-FirstYear">
-                    </a>
-                    <p class="text-certificiate-component">
-                        A certificate awarded to all students who are in Dean's List of PHINMA UPang during the first
-                        semester of A.Y 2018-2019</p>
-                </div>
-                <!-- CONTINUE HERE -->
-
-            </div>
-            <!-- end of certificate Content -->
+          </div>
         </div>
-        <!-- end: cerficateArea -->
-        <!-- begin: contactPage -->
-        <div class="h-auto bg-gray-100  pb-72" id="contactPage">
-            <div class="flex md:py-20 py-20">
-                <p class="category-titles mt-2" data-aos="fade-zoom-in" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    Contact Page</p>
-            </div>
-            <!-- first Content -->
-            <div class="max-w-4xl mx-auto md:px-8 md:py-2 p-3 md:justify-between mt-12">
-                <div class="bg-white border p-6 shadow-md">
-                    <!-- fullName and User's Email -->
-                    <form action="https://formsubmit.co/6ce8cc1e5078eae3dfea6eb70a3bba9e" method="POST">
-                        <div class="gap-4 gap-y-3 md:gap-6 md:gap-y-5 md:grid md:grid-cols-2">
-                            <div class="mb-6">
-                                <label class="block">
-                                    <span class="txt-box-property" require>
-                                        Your Name
-                                    </span>
-                                    <input type="text" name="fullName" class="input-property"
-                                        placeholder="Hello, What's your name?" required/>
-                                </label>
-                            </div>
-                            <div class="mb-6">
-                                <label class="block">
-                                    <span class="txt-box-property">
-                                        Your Email
-                                    </span>
-                                    <input type="email" name="email" class="input-property"
-                                        placeholder="username@domain.com" required/>
-                                </label>
-                            </div>
-                        </div>
-                        <!-- subjectArea -->
-                        <div>
-                            <div class="mb-6">
-                                <label class="block">
-                                    <span class="txt-box-property">
-                                        Subject
-                                    </span>
-                                    <input type="text" name="subject" class="input-property"
-                                        placeholder="Subject of your message." required/>
-                                </label>
-                            </div>
-                        </div>
-                        <!-- messageArea -->
-                        <div>
-                            <label for="message" class="txt-box-property">Your
-                                message</label>
-                            <textarea name="message" id="message" rows="4" class="input-property"
-                                placeholder="Hey, you can type your message here! :)" required></textarea>
-                        </div>
-                        <div class="flex justify-center items-center pt-8">
-                            <button type="submit" class="lng-btn-property">
-                                Submit
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
+      </div>
+      <!-- end: landingPage -->
+      <!-- begin: startMeContent -->
+      <div class="h-auto bg-gray-100 text-center" id="about">
+        <div class="flex md:py-20 py-20">
+          <p
+            class="category-titles"
+            data-aos="fade-zoom-in"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            About me
+          </p>
         </div>
-        <!-- end: contanctPage -->
-        <!-- begin: footerArea -->
-        <footer class="bg-gray-100 ">
-            <div class="max-w-7xl mx-auto">
-                <div class="md:flex md:justify-between mx-auto grid grid-cols-1 items-center">
-                    <div class="footer-style block">
-                        <p class="text-center">
-                            Connect with me
-                        </p>
-                        <div class="footer-style text-center pt-3 space-x-2">
-                            <a href="https://www.linkedin.com/in/jairusgalang/" target="_blank"><i
-                                    class="fab fa-linkedin fa-lg"></i></a>
-                            <a href="https://www.behance.net/jairusgalang" target="_blank"><i
-                                    class="fa-brands fa-behance-square fa-lg"></i></a>
-                            <a href="https://github.com/jairusgalang" target="_blank"><i
-                                    class="fa-brands fa-github fa-lg"></i></a>
-                        </div>
-                    </div>
-                    <div class="footer-style mx-auto md:mx-0 block">
-                        <p class="text-center">
-                            Contact me
-                        </p>
-                        <div class="footer-style flex items-center pt-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                            </svg>
-                            <p class="px-2">
-                                jairusgalang.dev@gmail.com
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <!-- first Content -->
+        <div
+          class="max-w-7xl p-2 md:justify-between mx-auto grid md:grid-cols-2 gap-y-16 md:gap-32"
+        >
+          <div
+            data-aos="fade-up-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <p class="about-me-content">
+              Hello, I am <b class="highlightened-traits">Jairus Galang</b> and
+              I am from the Philippines. I graduated at PHINMA University of
+              Pangasinan with a Bachelor's Degree in Information Technology and
+              Major in Web Development. I do love exploring technologies that
+              has something to with Web Development.
+            </p>
+            <p class="about-me-content pt-5">
+              I am a former member of
+              <b class="highlightened-traits">Google Developer Student Clubs</b>
+              and I was assigned as
+              <b class="highlightened-traits">Public Information Officer</b> our
+              club. During my internship period, I was assigned as
+              <b class="highlightened-traits"> Data Engineer Intern</b> at SP
+              Madrid and Associates Law Firm and we managed to create and maintain
+              data visualization and dashboards. As I graduated, I managed to
+              land my first job to a start-up company in Baguio City, and there
+              I became a <b class="highlightened-traits">Flutter Developer</b>,
+              where we developed a mobile application in Android and powered by
+              Google's Firebase as our BaaS.
+            </p>
+          </div>
+          <div
+            class="px-3"
+            data-aos="fade-up-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <div class="bg-white border p-3 shadow-md">
+              <a
+                href="https://jairusgalang.github.io/public/img/08.jpg"
+                target="_blank"
+              >
+                <img
+                  src="public/img/08.jpg"
+                  class="h-42 w-auto rounded-full mx-auto object-covershadow-xl"
+                  loading="lazy"
+                  alt="DSC-GALANG-PIC"
+                />
+              </a>
             </div>
-        </footer>
-        <!-- end: footerArea -->
+          </div>
+        </div>
+        <!-- end of first Content -->
+
+        <!-- end of aboutMe Content -->
+      </div>
+      <!-- end: startMeContent -->
+      <!-- begin: projectContent -->
+      <div class="h-auto bg-gray-100 text-center" id="projects">
+        <div
+          class="flex md:py-20 py-20"
+          data-aos="fade-zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+        >
+          <p class="category-titles">Projects</p>
+        </div>
+        <div
+          class="max-w-8xl px-8 p-3 md:justify-between mx-auto grid md:grid-cols-2 xl:grid-cols-3 gap-y-16 md:gap-16"
+        >
+          <div
+            class="bg-white rounded shadow-md"
+            data-aos="fade-up-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/img/CRRWeb-MockUp.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/img/CRRWeb-MockUp.jpg"
+                class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit"
+                loading="lazy"
+                alt="CRR-Web"
+            /></a>
+            <div>
+              <p class="title-project">CITE Research Repository - Web</p>
+              <div class="flex px-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="project-icons"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <p class="details-project">
+                  Role: Project Manager and Developer
+                </p>
+              </div>
+              <div class="flex px-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="project-icons"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+                <p class="details-project">Date: September 2020 - May 2021</p>
+              </div>
+              <p class="stacks-used">
+                PHP | MySQL | jQuery | JavaScript | SweetAlert | Git | HTML |
+                Bootstrap | Visual Studio Code
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded shadow-md"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/img/CRRMobile.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/img/CRRMobile.jpg"
+                class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit"
+                loading="lazy"
+                alt="CRR-Mobile"
+              />
+            </a>
+            <div>
+              <p class="title-project">CITE Research Repository - Mobile</p>
+              <div class="flex px-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="project-icons"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <p class="details-project">
+                  Role: Project Manager and Developer
+                </p>
+              </div>
+              <div class="flex px-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="project-icons"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+                <p class="details-project">
+                  Date: September 2020 - January 2021
+                </p>
+              </div>
+              <p class="stacks-used">
+                JAVA | Android | Android Studio | Firebase Realtime Database |
+                Visual Studio Code | Git
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded shadow-md"
+            data-aos="fade-up-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/img/NFT-Museum-Mockup.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/img/NFT-Museum-Mockup.jpg"
+                class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit"
+                loading="lazy"
+                alt="NFT-Museum-Mockup"
+              />
+            </a>
+            <div class="pb-4">
+              <p class="title-project">NFT Museum: NFT Marketplace</p>
+              <p class="sbjct-desc-prop">UI/UX Design Concept</p>
+              <a
+                href="https://www.behance.net/gallery/133626807/NFT-Museum-NFT-Marketplace"
+                target="_blank"
+                class="shrt-btn-property"
+              >
+                Behance
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded shadow-md"
+            data-aos="fade-up-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/img/MenTalk - Mockup.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/img/MenTalk - Mockup.jpg"
+                loading="lazy"
+                class="h-auto p-3 w-full rounded-3xl mx-auto"
+                alt="MenTalkDesign"
+              />
+            </a>
+            <div class="pb-4">
+              <p class="title-project">MenTalk - Mental Talk Support App</p>
+              <p class="sbjct-desc-prop">UI/UX Design Concept</p>
+              <a
+                href="https://www.behance.net/gallery/133792887/MenTalk-Mental-Health-Support-Mobile-App-Design"
+                target="_blank"
+                class="shrt-btn-property"
+              >
+                Behance
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded shadow-md"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/img/MouleWalletCryptoWallet.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/img/MouleWalletCryptoWallet.jpg"
+                loading="lazy"
+                class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit"
+                alt="MouleWallet-Mockup"
+              />
+            </a>
+            <div class="pb-4">
+              <p class="title-project">MouleWallet: CryptoWallet</p>
+              <p class="sbjct-desc-prop">UI/UX Design Concept</p>
+              <a
+                href="https://www.behance.net/gallery/133681579/MouleWallet-CryptoWallet"
+                target="_blank"
+                class="shrt-btn-property"
+              >
+                Behance
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded shadow-md"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/img/EncryptoMail-Landing-page.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/img/EncryptoMail-Landing-page.jpg"
+                loading="lazy"
+                class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit"
+                alt="EncryptoMail-LandingPage"
+              />
+            </a>
+            <div class="pb-4">
+              <p class="title-project">EncryptoMail | Landing Page</p>
+              <p class="sbjct-desc-prop">UI/UX Design Concept</p>
+              <a
+                href="https://www.behance.net/gallery/142348279/EncryptoMail-Landing-Page"
+                target="_blank"
+                class="shrt-btn-property"
+              >
+                Behance
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded shadow-md"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/img/RelayCloud_UIUX.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/img/RelayCloud_UIUX.jpg"
+                loading="lazy"
+                class="md:h-auto h-43 p-3 w-full rounded-3xl mx-auto md:object-fit"
+                alt="EncryptoMail-LandingPage"
+              />
+            </a>
+            <div class="pb-4">
+              <p class="long-title-projects">
+                Relay Cloud - a privacy focused Cloud Storage | Landing Page
+              </p>
+              <p class="sbjct-desc-prop">UI/UX Design Concept</p>
+              <a
+                href="https://www.behance.net/gallery/151447897/Relay-Cloud-a-privacy-Cloud-Storage"
+                target="_blank"
+                class="shrt-btn-property"
+              >
+                Behance
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end: projectContent -->
+      <!-- begin: workExperience -->
+      <div class="h-auto bg-gray-100 text-center" id="work-experience">
+        <div
+          class="flex md:pt-20 pt-20"
+          data-aos="fade-zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+        >
+          <p class="category-titles">Experience</p>
+        </div>
+        <p class="text-gray-400 font-poppins italic md:text-sm pb-8 mt-8">
+          You can have a
+          <a
+            href="https://drive.google.com/file/d/1VVBXtoO9tgfR9WlTjI9XqagD6T8Uwimm/view?usp=drive_link"
+            target="_blank"
+            class="font-semibold text-blue-400"
+            >preview</a
+          >
+          of my resume via Google Drive. You may contact me if you think I am
+          fit in your team/company.
+        </p>
+        <div
+          class="max-w-screen-2xl mx-auto px-5 md:px-4 md:py-2 md:justify-between grid xl:grid-cols-3 md:grid-cols-2 gap-y-16 md:gap-16"
+        >
+          <!-- first Item -->
+          <div
+            class="bg-white shadow-md block p-2 lg:p-6 rounded-2xl"
+            data-aos="fade-up-rsomeight"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <div class="pt-3 pb-3">
+              <p
+                class="text-gray-800 font-poppins text-md md:text-lg font-bold uppercase rounded-3xl"
+              >
+                Google Developers Student Clubs
+              </p>
+              <div class="flex items-left pt-3">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fas fa-location-dot"></i>
+                  Location: University of Pangasinan
+                </p>
+              </div>
+              <div class="flex items-left">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fa-solid fa-user"></i> Position: Public
+                  Information Officer
+                </p>
+              </div>
+              <div class="flex items-left">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fa-solid fa-user-clock"></i>Timeline: July 2020
+                  - July 2021
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center justify-center p-2 lg:p-6">
+              <a
+                href="https://www.facebook.com/gdsc.phinmaupang"
+                target="_blank"
+              >
+                <i
+                  class="workexp-txt-details fa-brands fa-facebook-square fa-lg"
+                ></i>
+              </a>
+              <a
+                href="https://www.facebook.com/gdsc.phinmaupang"
+                target="_blank"
+              >
+                <i class="workexp-txt-details fab fa-linkedin fa-lg"></i>
+              </a>
+            </div>
+          </div>
+          <!-- second Item -->
+          <div
+            class="bg-white shadow-md block p-2 lg:p-6 rounded-2xl"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <div class="pt-3 pb-3">
+              <p
+                class="text-gray-800 font-poppins text-base md:text-xl font-bold uppercase rounded-3xl"
+              >
+                SP Madrid and Associates Law Firm
+              </p>
+              <div class="flex items-left pt-3">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fas fa-location-dot"></i>
+                  Location: San Carlos City, Pangasinan
+                </p>
+              </div>
+              <div class="flex items-left">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fa-solid fa-user"></i> Position: Data Engineer
+                  Intern
+                </p>
+              </div>
+              <div class="flex items-left">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fa-solid fa-user-clock"></i>Rendered Hours: 500
+                  Hours
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center justify-center p-2 lg:p-6">
+              <a
+                href="https://www.facebook.com/officialspmadrid"
+                target="_blank"
+              >
+                <i
+                  class="workexp-txt-details fa-brands fa-facebook-square fa-lg"
+                ></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/spmadridlawfirm"
+                target="_blank"
+              >
+                <i class="workexp-txt-details fab fa-linkedin fa-lg"></i>
+              </a>
+              <a href="https://www.spmadridlaw.com/" target="_blank">
+                <i class="workexp-txt-details fa fa-link fa-lg"></i>
+              </a>
+            </div>
+          </div>
+          <!-- third Item -->
+          <div
+            class="bg-white shadow-md block p-2 lg:p-6 rounded-2xl"
+            data-aos="fade-up-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <div class="pt-3 pb-3">
+              <p
+                class="text-gray-800 font-poppins text-md md:text-lg font-bold uppercase rounded-3xl"
+              >
+                Intellizens
+              </p>
+              <div class="flex items-left pt-3">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fas fa-location-dot"></i>
+                  Location: Toronto, Ontario Canada
+                </p>
+              </div>
+              <div class="flex items-left">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fa-solid fa-user"></i> Position: Project Based
+                  Freelance as UI/UX Designer
+                </p>
+              </div>
+              <div class="flex items-left">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fa-solid fa-user-clock"></i>Timeline: December
+                  2021 - December 2022
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-md block p-2 lg:p-6 rounded-2xl"
+            data-aos="fade-up-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <div class="pt-3 pb-3">
+              <p
+                class="text-gray-800 font-poppins text-md md:text-lg font-bold uppercase rounded-3xl"
+              >
+                Innovative Media Philippines
+              </p>
+              <div class="flex items-left pt-3">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fas fa-location-dot"></i>
+                  Location: Baguio City, Benguet, Philippines.
+                </p>
+              </div>
+              <div class="flex items-left">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fa-solid fa-user"></i> Position: Software
+                  Developer
+                </p>
+              </div>
+              <div class="flex items-left">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fa-solid fa-user-clock"></i>Timeline: November
+                  2022 - April 2023
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center justify-center p-2 lg:p-6">
+              <a href="https://impwebdevelopment.com/" target="_blank">
+                <i class="workexp-txt-details fa fa-link fa-lg"></i>
+              </a>
+              <a
+                href="mailto:innovativemediaphilippines@gmail.com"
+                target="_blank"
+              >
+                <i class="workexp-txt-details fa fa-envelope fa-lg"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-md block p-2 lg:p-6 rounded-2xl"
+            data-aos="fade-up-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <div class="pt-3 pb-3">
+              <p
+                class="text-gray-800 font-poppins text-md md:text-lg font-bold uppercase rounded-3xl"
+              >
+                Cloudy Development
+              </p>
+              <div class="flex items-left pt-3">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fas fa-location-dot"></i>
+                  Location: Singapore-based, Work-from-Home.
+                </p>
+              </div>
+              <div class="flex items-left">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fa-solid fa-user"></i> Position: Freelance UI/UX
+                  Specialist
+                </p>
+              </div>
+              <div class="flex items-left">
+                <p class="workexp-txt-details">
+                  <i class="px-2 fa-solid fa-user-clock"></i>Timeline: August
+                  2023 - Present
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center justify-center p-2 lg:p-6">
+              <a
+                href="https://www.linkedin.com/company/cloudy-development/"
+                target="_blank"
+              >
+                <i class="workexp-txt-details fab fa-linkedin fa-lg"></i>
+              </a>
+              <a href="https://cloudydevelopment.com/" target="_blank">
+                <i class="workexp-txt-details fa fa-link fa-lg"></i>
+              </a>
+              <a href="mailto:admin@cloudydevelopment.com" target="_blank">
+                <i class="workexp-txt-details fa fa-envelope fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end: workExperience -->
+      <!-- begin: certificateArea -->
+      <div class="h-auto bg-gray-100 text-center" id="certificates">
+        <div
+          class="flex md:py-20 py-20"
+          data-aos="fade-zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+        >
+          <p class="category-titles">Certificates</p>
+        </div>
+        <div
+          class="max-w-full mx-auto md:px-8 md:py-2 p-3 md:justify-between grid xl:grid-cols-4 md:grid-cols-2 gap-y-16 md:gap-16"
+        >
+          <div
+            class="div-layout-property"
+            data-aos="fade-up-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/BagoSphere_Galang.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/BagoSphere_Galang.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="BagoSphere_Galang"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              Attended at BagoSphere's Webinar and tackled about building our
+              self-confidence when adventuring to the real-word challenges.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/Internship-GalangJairus.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/Internship-GalangJairus.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="Internship-GalangJairus"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              Certificated awarded after successfully completing the Internship
+              in the assigned company.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/CODING.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/CODING.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="CODING"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              DSC UPang and CITESC partnered together and hosted Coding
+              Competition for the lower year of our Department and the
+              competition held on Discord.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <!-- Edit here -->
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/DSC-FIREBASE-IN-ACTION.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/DSC-FIREBASE-IN-ACTION.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="Firebase-Webinar"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              A certificate was given by the CITE Department after participating
+              the webinar about Firebase.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/DSCUPang.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/DSCUPang.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="DSCUpang-Badges"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              The Badges that I earned after attending webinars from other DSC
+              Chapters and after successfully completing their required tasks.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/GDGPH2020Certificate-1.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/GDGPH2020Certificate-1.jpg"
+                loading="lazy"
+                class="image-property"
+                alt="GDGPH-Webinar"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              Awarded by attending GDG Philippines Devfest and by participating
+              in their webinars.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/GDSC-CORE-TEAM-MEMBER.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/GDSC-CORE-TEAM-MEMBER.jpg"
+                loading="lazy"
+                class="image-property"
+                alt="GDSC-CoreMember-Cert"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              The certificate was awarded to us as a recognition of being a
+              member of the Core Team in DSC UPang Chapter, the certificate also
+              serves as
+              <a
+                href="https://www.omniquotient.com/certificate/EC332FF8BBC8"
+                class="text-gray-800 font-poppins font-semibold text-md tracking-wide duration-150 border-b-2 border-transparent hover:border-gray-800"
+                >authenticity</a
+              >
+              of our membership of our Club.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/Intro-to-Dsc_Galang.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/Intro-to-Dsc_Galang.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="Intro-to-Dsc-Webinar"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              The certificate was awarded after attending the webinar, together
+              with our DSC Lead who introduced what is GDSC and how does DSC
+              Upang would operate.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/Intro-to-Fetch-Galang.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/Intro-to-Fetch-Galang.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="Fetch-Api-Webianr"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              The certificate was awarded after the event, and the webinar gave
+              us an idea on how does fetch api used and interact to both
+              developers and users.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/Intro-to-Photography.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/Intro-to-Photography.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="Photo-Video-Webinar"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              Awarded after attending and participating the webinar for
+              Introduction to coding and Videography of one of our Alumni in our
+              Department.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/MS-Project_Galang.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/MS-Project_Galang.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="MS-Project-Webinar"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              The award was given to us after the webinar and the speaker of our
+              webinar was our instructor and we tackled about on how do we
+              utilize Software Development Management with MS Project.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/PAW2020_Galang.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/PAW2020_Galang.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="PAW-Webinar"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              The certificate was awarded after participating in the Philippine
+              Android Week for three consecutive days and finishing the required
+              codelabs.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/SEMINAR.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/SEMINAR.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="Developing-Kotlin-Webinar"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              Awarded after participating in Developing Android with Kotlin and
+              the certificate was given to us after trying out on how to code in
+              Kotlin.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/SUCCESS-LADDER-2021.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/SUCCESS-LADDER-2021.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="Master-In-Web-Dynamics"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              A certificate awarded during our Student Success Ladder and held
+              on May 2021
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/Useful-tools_Galang.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/Useful-tools_Galang.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="Useful-Tools-Webinar"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              The webinar gave us a lot of useful tips on how to utilize the
+              tools in every technologies that we want to try or to learn and
+              the certificate was given after the event
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/KinobiCertGalang.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/img/KinobiCertGalang.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="Kinobi-Certificate"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              Building or creating an effective resume was our subject during
+              the webinar and the certificate was given to us after
+              participating the event.
+            </p>
+          </div>
+          <div
+            class="div-layout-property"
+            data-aos="fade-up-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            <a
+              href="https://jairusgalang.github.io/public/Certificates/DeansLister-FirstYear.jpg"
+              target="_blank"
+            >
+              <img
+                src="public/Certificates/DeansLister-FirstYear.jpg"
+                class="image-property"
+                loading="lazy"
+                alt="DeansLister-FirstYear"
+              />
+            </a>
+            <p class="text-certificiate-component">
+              A certificate awarded to all students who are in Dean's List of
+              PHINMA UPang during the first semester of A.Y 2018-2019
+            </p>
+          </div>
+          <!-- CONTINUE HERE -->
+        </div>
+        <!-- end of certificate Content -->
+      </div>
+      <!-- end: cerficateArea -->
+      <!-- begin: contactPage -->
+      <div class="h-auto bg-gray-100 pb-72" id="contactPage">
+        <div class="flex md:py-20 py-20">
+          <p
+            class="category-titles mt-2"
+            data-aos="fade-zoom-in"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            Contact Page
+          </p>
+        </div>
+        <!-- first Content -->
+        <div
+          class="max-w-4xl mx-auto md:px-8 md:py-2 p-3 md:justify-between mt-12"
+        >
+          <div class="bg-white border p-6 shadow-md">
+            <!-- fullName and User's Email -->
+            <form
+              action="https://formsubmit.co/6ce8cc1e5078eae3dfea6eb70a3bba9e"
+              method="POST"
+            >
+              <div
+                class="gap-4 gap-y-3 md:gap-6 md:gap-y-5 md:grid md:grid-cols-2"
+              >
+                <div class="mb-6">
+                  <label class="block">
+                    <span class="txt-box-property" require> Your Name </span>
+                    <input
+                      type="text"
+                      name="fullName"
+                      class="input-property"
+                      placeholder="Hello, What's your name?"
+                      required
+                    />
+                  </label>
+                </div>
+                <div class="mb-6">
+                  <label class="block">
+                    <span class="txt-box-property"> Your Email </span>
+                    <input
+                      type="email"
+                      name="email"
+                      class="input-property"
+                      placeholder="username@domain.com"
+                      required
+                    />
+                  </label>
+                </div>
+              </div>
+              <!-- subjectArea -->
+              <div>
+                <div class="mb-6">
+                  <label class="block">
+                    <span class="txt-box-property"> Subject </span>
+                    <input
+                      type="text"
+                      name="subject"
+                      class="input-property"
+                      placeholder="Subject of your message."
+                      required
+                    />
+                  </label>
+                </div>
+              </div>
+              <!-- messageArea -->
+              <div>
+                <label for="message" class="txt-box-property"
+                  >Your message</label
+                >
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  class="input-property"
+                  placeholder="Hey, you can type your message here! :)"
+                  required
+                ></textarea>
+              </div>
+              <div class="flex justify-center items-center pt-8">
+                <button type="submit" class="lng-btn-property">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- end: contanctPage -->
+      <!-- begin: footerArea -->
+      <footer class="bg-gray-100">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="md:flex md:justify-between mx-auto grid grid-cols-1 items-center"
+          >
+            <div class="footer-style block">
+              <p class="text-center">Connect with me</p>
+              <div class="footer-style text-center pt-3 space-x-2">
+                <a
+                  href="https://www.linkedin.com/in/jairusgalang/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin fa-lg"></i
+                ></a>
+                <a href="https://www.behance.net/jairusgalang" target="_blank"
+                  ><i class="fa-brands fa-behance-square fa-lg"></i
+                ></a>
+                <a href="https://github.com/jairusgalang" target="_blank"
+                  ><i class="fa-brands fa-github fa-lg"></i
+                ></a>
+              </div>
+            </div>
+            <div class="footer-style mx-auto md:mx-0 block">
+              <p class="text-center">Contact me</p>
+              <div class="footer-style flex items-center pt-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  />
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  />
+                </svg>
+                <p class="px-2">jairusgalang.dev@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end: footerArea -->
     </body>
-</div>
-<script src="/js/style.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
+  </div>
+  <script src="/js/style.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
     AOS.init({
-        offset: 400,
-        duration: 400
+      offset: 400,
+      duration: 400,
     });
-</script>
-
+  </script>
 </html>
